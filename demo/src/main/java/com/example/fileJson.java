@@ -1,8 +1,10 @@
 package com.example;
 
 import java.io.BufferedReader;
+import java.io.BufferedWriter;
 import java.io.File;
 import java.io.FileReader;
+import java.io.FileWriter;
 
 import javax.swing.JOptionPane;
 
@@ -11,18 +13,20 @@ public class fileJson {
     static String value;
     static int spacesCount;
 
-    public static void addKeyToAllLeaves(File fileJson, String newKey, String newValue, boolean after, String existingKey) {
-        try (BufferedReader br = new BufferedReader(new FileReader(fileJson))) {
+    public static void addKeyToAllLeaves(File fileJsonIn, File fileJsonOut, String newKey, String newValue, boolean after, String existingKey) {
+        try (BufferedReader br = new BufferedReader(new FileReader(fileJsonIn));
+             BufferedWriter bw = new BufferedWriter(new FileWriter(fileJsonOut, false))) {
 
             String line;
             String lineTrim;
             String newdata;
+            String insertData;
             
 
             while ((line = br.readLine()) != null) {
                 lineTrim = line.trim();
 
-                System.out.println(line);
+                //System.out.println(line);
                 
                 if (lineTrim.isEmpty() || lineTrim.startsWith(";") || lineTrim.startsWith("#")) continue;
                 if (lineTrim.contains(":")){
@@ -32,14 +36,25 @@ public class fileJson {
                     if (key.equals(existingKey)) {
                         // Ajouter la nouvelle clé/valeur après la clé existante
                         spacesCount = compterEspacesDebut(line);
+                        newdata = "\"" + newKey + "\": \"" + newValue + "\"";
+                        insertData = newdata.indent(spacesCount);
                         if (after) {
-                            System.out.printf("Adding new key: %s, Value: %s after existing key:  spaces: %d%n", newKey, newValue, spacesCount);
-                            newdata = "\"" + newKey + "\": \"" + newValue;
-                            System.out.printf(newdata.indent(spacesCount));
+                            //System.out.printf("Adding new key: %s, Value: %s after existing key:  spaces: %d%n", newKey, newValue, spacesCount);
+                            bw.write(line + ",");
+                            bw.newLine();
+                            bw.write(insertData);
+                            //bw.newLine();
+                            //System.out.printf(newdata.indent(spacesCount));
                         } else {
-                            System.out.printf("Adding new key: %s, Value: %s before existing key: %s%n", newKey, newValue, existingKey);
-                            newdata = "\"" + newKey + "\": \"" + newValue;
-                            System.out.printf(newdata.indent(spacesCount));                        }
+                            bw.write(insertData + ",");
+                            //bw.newLine();    
+                            bw.write(line);
+                            bw.newLine();                }
+                    }
+                    else {
+                        // Écrire la ligne telle quelle dans le fichier de sortie
+                        bw.write(line);
+                        bw.newLine();
                     }
                     System.out.println(line);
                     System.out.printf("Key: %s, Value: %s %n", key, value);
