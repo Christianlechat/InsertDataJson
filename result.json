@@ -15,8 +15,8 @@
               "ServiceWeb": "http://192.168.0.1",
               "UrlConstructeur": "https://woll-maschinenbau.com/",
               "User": "admin",
-              "Soft": "v1"
-,              "Password": "!Ibf1324"
+              "Password": "!Ibf1324",
+              "Software": "TIA"
           "KEYENCE": {
             "St10.1 DMC": {
               "n°PSA": "13789xx",
@@ -31,8 +31,8 @@
               "ServiceWeb": "192.168.0.53",
               "UrlConstructeur": "SiteWeb",
               "User": "",
-              "Soft": "v1"
-,              "Password": ""
+              "Password": "",
+              "Software": "TIA"
             "St10.2 DMC": {
               "n°PSA": "13789xx",
               "Description": "xxx",
@@ -46,8 +46,8 @@
               "ServiceWeb": "192.168.0.54",
               "UrlConstructeur": "https://www.keyence.fr/",
               "User": "",
-              "Soft": "v1"
-,              "Password": ""
+              "Password": "",
+              "Software": "TIA"
         "QUICKLOAD": {
           "OP020": {
             "TIA":{
@@ -63,8 +63,8 @@
               "ServiceWeb": "http://152.0.4.1",
               "UrlConstructeur": "https://quickload.it/en/",
               "User": "PLC_3531",
-              "Soft": "v1"
-,              "Password": "QuickLoad0542"
+              "Password": "QuickLoad0542",
+              "Software": "TIA"
             "KEYENCE": {
               "R1 DMC Park":{
                 "n°PSA": "1378708",
@@ -79,8 +79,8 @@
                 "ServiceWeb": "http://192.168.0.1",
                 "UrlConstructeur": "https://www.keyence.fr/",
                 "User": "",
-                "Soft": "v1"
-,                "Password": ""                
+                "Password": ""                ,
+                "Software": "TIA"
               "R2 DMC orientation":{
                 "n°PSA": "1378708",
                 "Description": "Manutention",
@@ -94,8 +94,8 @@
                 "ServiceWeb": "http://192.168.0.1",
                 "UrlConstructeur": "https://www.keyence.fr/",
                 "User": "",
-                "Soft": "v1"
-,                "Password": ""            
+                "Password": ""            ,
+                "Software": "TIA"
           "OP030": {
             "TIA":{
               "n°PSA": "1378710",
@@ -110,8 +110,8 @@
               "ServiceWeb": "http://192.168.0.1",
               "UrlConstructeur": "SiteWeb",
               "User": "PLC_3530",
-              "Soft": "v1"
-,              "Password": "QuickLoad0542"
+              "Password": "QuickLoad0542",
+              "Software": "TIA"
             "KEYENCE": {
               "R1 DMC Park":{
                 "n°PSA": "1378708",
@@ -126,8 +126,8 @@
                 "ServiceWeb": "http://192.168.0.1",
                 "UrlConstructeur": "https://www.keyence.fr/",
                 "User": "",
-                "Soft": "v1"
-,                "Password": ""                
+                "Password": ""                ,
+                "Software": "TIA"
               "R2 DMC orientation":{
                 "n°PSA": "1378708",
                 "Description": "Manutention",
@@ -141,8 +141,8 @@
                 "ServiceWeb": "http://192.168.0.1",
                 "UrlConstructeur": "https://www.keyence.fr/",
                 "User": "",
-                "Soft": "v1"
-,                "Password": ""          
+                "Password": ""          ,
+                "Software": "TIA"
           "OP040": {
             "TIA": {
               "n°PSA": "1378723",
@@ -157,8 +157,8 @@
                 "ServiceWeb": "http://192.168.0.1",
                 "UrlConstructeur": "SiteWeb",
               "User": "PLC_3532",
-              "Soft": "v1"
-,              "Password": "QuickLoad0542"              
+              "Password": "QuickLoad0542"              ,
+              "Software": "TIA"
             "KEYENCE": {
               "R1 DMC Park":{
                 "n°PSA": "1378708",
@@ -173,8 +173,8 @@
                 "ServiceWeb": "http://192.168.0.1",
                 "UrlConstructeur": "https://www.keyence.fr/",
                 "User": "",
-                "Soft": "v1"
-,                "Password": ""                
+                "Password": ""                ,
+                "Software": "TIA"
               "R2 DMC orientation":{
                 "n°PSA": "1378708",
                 "Description": "Manutention",
@@ -188,8 +188,8 @@
                 "ServiceWeb": "http://192.168.0.1",
                 "UrlConstructeur": "https://www.keyence.fr/",
                 "User": "",
-                "Soft": "v1"
-,                "Password": ""             
+                "Password": ""             ,
+                "Software": "TIA"
           "OP110": {
             "n°PSA": "1378739",
             "Description": "Manutention",
@@ -203,8 +203,8 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "PLC_3533",
-            "Soft": "v1"
-,            "Password": "QuickLoad0542"
+            "Password": "QuickLoad0542",
+            "Software": "TIA"
           "OP120": {
             "n°PSA": "1378746",
             "Description": "Manutention",
@@ -218,8 +218,8 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "PLC_3569",
-            "Soft": "v1"
-,            "Password": "QuickLoad0542"
+            "Password": "QuickLoad0542",
+            "Software": "TIA"
         "BUDERUS": {
           "OP030": {
             "n°PSA": "1378709",
@@ -234,8 +234,8 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "",
-            "Soft": "v1"
-,            "Password": ""
+            "Password": "",
+            "Software": "TIA"
         "EMAG": {
           "OP020": {
             "n°PSA": "1378707",
@@ -250,8 +250,8 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "",
-            "Soft": "v1"
-,            "Password": ""
+            "Password": "",
+            "Software": "TIA"
           "OP40": {
             "n°PSA": "1378725",
             "Description": "Laser de soudure",
@@ -265,8 +265,8 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "",
-            "Soft": "v1"
-,            "Password": ""
+            "Password": "",
+            "Software": "TIA"
           "OP110": {
             "n°PSA": "1378741",
             "Description": "Laser de soudure",
@@ -280,8 +280,8 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "",
-            "Soft": "v1"
-,            "Password": ""
+            "Password": "",
+            "Software": "TIA"
         "LASIT": {
           "All Lasit": {
             "n°PSA": "13789xx",
@@ -296,8 +296,8 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "",
-            "Soft": "v1"
-,            "Password": ""
+            "Password": "",
+            "Software": "TIA"
         "MECANOLAV": {
           "OP020": {
             "n°PSA": "1378711",
@@ -312,8 +312,8 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "",
-            "Soft": "v1"
-,            "Password": ""
+            "Password": "",
+            "Software": "TIA"
       "C0": {
         "WOLL": {
           "AllWoll": {
@@ -329,8 +329,8 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "admin",
-            "Soft": "v1"
-,            "Password": "!Ibf1324"
+            "Password": "!Ibf1324",
+            "Software": "TIA"
         "QUICKLOAD": {
           "OP020": {
             "n°PSA": "1396862",
@@ -345,8 +345,8 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "PLC_3597",
-            "Soft": "v1"
-,            "Password": "QuickLoad0542"
+            "Password": "QuickLoad0542",
+            "Software": "TIA"
           "OP040": {
             "n°PSA": "1396863",
             "Description": "Manutention",
@@ -360,8 +360,8 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "PLC_3598",
-            "Soft": "v1"
-,            "Password": "QuickLoad0542"
+            "Password": "QuickLoad0542",
+            "Software": "TIA"
           "OP110": {
             "n°PSA": "1397171",
             "Description": "Manutention",
@@ -375,8 +375,8 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "PLC_3599",
-            "Soft": "v1"
-,            "Password": "QuickLoad0542"
+            "Password": "QuickLoad0542",
+            "Software": "TIA"
           "OP120": {
             "n°PSA": "1397174",
             "Description": "Manutention",
@@ -390,8 +390,8 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "PLC_3600",
-            "Soft": "v1"
-,            "Password": "QuickLoad0542"
+            "Password": "QuickLoad0542",
+            "Software": "TIA"
         "EMAG": {
           "OP020": {
             "n°PSA": "1396861",
@@ -406,8 +406,8 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "",
-            "Soft": "v1"
-,            "Password": ""
+            "Password": "",
+            "Software": "TIA"
           "OP040": {
             "n°PSA": "1396865",
             "Description": "xxx",
@@ -421,8 +421,8 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "",
-            "Soft": "v1"
-,            "Password": ""
+            "Password": "",
+            "Software": "TIA"
           "OP110": {
             "n°PSA": "1397173",
             "Description": "Laser de soudage",
@@ -436,8 +436,8 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "",
-            "Soft": "v1"
-,            "Password": ""
+            "Password": "",
+            "Software": "TIA"
         "LASIT": {
           "All Lasit": {
             "n°PSA": "All Lasit",
@@ -452,8 +452,8 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "",
-            "Soft": "v1"
-,            "Password": ""
+            "Password": "",
+            "Software": "TIA"
       "C1": {
         "EUTOMATION": {
           "C1": {
@@ -470,8 +470,8 @@
               "ServiceWeb": "http://192.168.20.1",
               "UrlConstructeur": "https://www.eutomation.be/en/",
               "User": "SAF-MB-STLA-C1",
-              "Soft": "v1"
-,              "Password": "$MB-STLA-c1-SAF-2024!"
+              "Password": "$MB-STLA-c1-SAF-2024!",
+              "Software": "TIA"
             "Cameras": {
               "St10.1": {
                 "n°PSA": "1384102",
@@ -486,8 +486,8 @@
                 "ServiceWeb": "http://192.168.0.1",
                 "UrlConstructeur": "https://www.keyence.fr/",
                 "User": "SAF-MB-STLA-C1",
-                "Soft": "v1"
-,                "Password": "$MB-STLA-c1-SAF-2024!"
+                "Password": "$MB-STLA-c1-SAF-2024!",
+                "Software": "TIA"
               "St10.2": {
                 "n°PSA": "1384102",
                 "Description": "Lecture DMC",
@@ -501,8 +501,8 @@
                 "ServiceWeb": "http://192.168.0.1",
                 "UrlConstructeur": "https://www.keyence.fr/",
                 "User": "SAF-MB-STLA-C1",
-                "Soft": "v1"
-,                "Password": "$MB-STLA-c1-SAF-2024!"
+                "Password": "$MB-STLA-c1-SAF-2024!",
+                "Software": "TIA"
               "St10.3": {
                 "n°PSA": "1384102",
                 "Description": "Lecture DMC",
@@ -516,8 +516,8 @@
                 "ServiceWeb": "http://192.168.20.1",
                 "UrlConstructeur": "https://www.keyence.fr/",
                 "User": "SAF-MB-STLA-C1",
-                "Soft": "v1"
-,                "Password": "$MB-STLA-c1-SAF-2024!"
+                "Password": "$MB-STLA-c1-SAF-2024!",
+                "Software": "TIA"
             "SCHUNK": {
               "St10.1": {
                 "n°PSA": "1384102",
@@ -532,8 +532,8 @@
                 "ServiceWeb": "http://192.168.20.1",
                 "UrlConstructeur": "https://schunk.com/fr/fr",
                 "User": "",
-                "Soft": "v1"
-,                "Password": ""
+                "Password": "",
+                "Software": "TIA"
         "KLEINKNECHT": {
           "OP020": {
             "n°PSA": "1384103",
@@ -548,5 +548,5 @@
             "ServiceWeb": "http://192.168.0.1",
             "UrlConstructeur": "SiteWeb",
             "User": "Admin",
-            "Soft": "v1"
-,            "Password": "Kleinknecht1618"
+            "Password": "Kleinknecht1618",
+            "Software": "TIA"

@@ -9,6 +9,7 @@ import java.io.FileWriter;
 import javax.swing.JOptionPane;
 
 public class fileJson {
+    //static BufferedReader br;
     static String key;
     static String value;
     static int spacesCount;
@@ -58,9 +59,10 @@ public class fileJson {
                     }
                     System.out.println(line);
                     System.out.printf("Key: %s, Value: %s %n", key, value);
-
+                    
                 }
             }
+            bw.close();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(
                 null,
@@ -71,6 +73,7 @@ public class fileJson {
             throw new RuntimeException("Erreur lors de la récupération du chemin du JAR", e);
             
         }
+        
     }
     static int compterEspacesDebut(String texte) {
         if (texte == null || texte.isEmpty()) {

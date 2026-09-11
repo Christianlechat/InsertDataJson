@@ -8,6 +8,10 @@ public class Main {
         System.out.println("Hello world!");
         File fJsonIn  = new File("usine.json");
         File fJsonOut = new File("result.json");
-        fileJson.addKeyToAllLeaves(fJsonIn, fJsonOut, "Soft", "v1", false, "Password");
+        if (fJsonOut.exists()) {
+            fJsonOut.delete();
+        }
+        fileJson.addKeyToAllLeaves(fJsonIn, fJsonOut, "Software", "TIA", true, "Password");
+        //fileJson.addKeyToAllLeaves(fJsonIn, fJsonOut, "Version", "v16", true, "Password");
     }
 }
