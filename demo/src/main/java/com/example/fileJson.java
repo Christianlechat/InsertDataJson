@@ -62,6 +62,7 @@ public class fileJson {
                     
                 }
             }
+            br.close();
             bw.close();
         } catch (Exception e) {
             JOptionPane.showMessageDialog(
