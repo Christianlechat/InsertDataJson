@@ -22,6 +22,7 @@ public class fileJson {
             String lineTrim;
             String newdata;
             String insertData;
+            String virgule = ",";
             
 
             while ((line = br.readLine()) != null) {
@@ -30,31 +31,32 @@ public class fileJson {
                 //System.out.println(line);
                 
                 if (lineTrim.isEmpty() || lineTrim.startsWith(";") || lineTrim.startsWith("#")) continue;
-                if ((lineTrim.contains(":" ) || lineTrim.contains("{") || lineTrim.contains("}"))) {
+                if (lineTrim.contains(":" )) {
                     int idx = lineTrim.indexOf(':');
                     key = lineTrim.substring(1, idx-1).trim();
                     value = lineTrim.substring(idx + 1).trim();
                     if (key.equals(existingKey)) {
                         // Ajouter la nouvelle clé/valeur après la clé existante
                         spacesCount = compterEspacesDebut(line);
-                        newdata = "\"" + newKey + "\": \"" + newValue + "\"";
-                        insertData = newdata.indent(spacesCount);
                         if (after) {
                             //System.out.printf("Adding new key: %s, Value: %s after existing key:  spaces: %d%n", newKey, newValue, spacesCount);
-                            if (!line.isEmpty() && line.charAt(line.length() - 1) == ',') {
+                            if (!line.isEmpty() && line.charAt(line.length() - 1) == ',') {   
                                 bw.write(line);
-                                bw.newLine();
+                                bw.newLine();                            
+                                newdata = "\"" + newKey + "\": \"" + newValue + "\",";
+                                insertData = newdata.indent(spacesCount);
                                 bw.write(insertData);
-                            } else {
+                            } else {                               
                                 bw.write(line + ",");
                                 bw.newLine();
+                                newdata = "\"" + newKey + "\": \"" + newValue + "\"";
+                                insertData = newdata.indent(spacesCount);
                                 bw.write(insertData);
                             }
-                            //bw.newLine();
-                            //System.out.printf(newdata.indent(spacesCount));
                         } else {
-                            bw.write(insertData + ",");
-                            //bw.newLine();    
+                            newdata = "\"" + newKey + "\": \"" + newValue + "\",";
+                            insertData = newdata.indent(spacesCount);
+                            bw.write(insertData); 
                             bw.write(line);
                             bw.newLine();                }
                     }
@@ -63,9 +65,12 @@ public class fileJson {
                         bw.write(line);
                         bw.newLine();
                     }
-                    System.out.println(line);
-                    System.out.printf("Key: %s, Value: %s %n", key, value);
-                    
+                    System.out.println(line);             
+                } else {
+                    if (lineTrim.contains("{") || lineTrim.contains("}")){
+                        bw.write(line);
+                        bw.newLine();
+                    }
                 }
             }
             br.close();
