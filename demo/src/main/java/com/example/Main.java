@@ -12,8 +12,7 @@ public class Main {
         if (fJsonOut.exists()) {
             fJsonOut.delete();
         }
-        fileJson.addKeyToAllLeaves(fJsonIn, fJsonOut, "Software", "TIA", true, "Password");
-        Files.copy(fJsonOut.toPath(), new File("resultCopy.json").toPath());
-        //fileJson.addKeyToAllLeaves(fJsonIn, fJsonOut, "Version", "v16", true, "Password");
+        fileJson.addKeyToAllLeaves(fJsonIn, fJsonOut, "NameSoftware", "TIA", true, "Password");
+        Files.copy(fJsonOut.toPath(), new File("UsineNewVersion.json").toPath());
     }
 }
